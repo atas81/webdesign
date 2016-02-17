@@ -1,0 +1,21 @@
+
+<div id="klick-mich" style="cursor: pointer">Klick mich!</div>
+<div id="info"></div>
+<script>
+	var counter = 0,
+	    elem = document.getElementById('klick-mich'),
+	    info = document.getElementById('info');
+
+	elem.addEventListener('click', function(){
+		counter++;
+		this.innerHTML = counter;
+		if(counter > 10)
+		{
+			var p = document.createElement('p');
+			p.innerHTML = 'Genug geklickt!';
+			info.appendChild(p);
+			this.style.display = 'none';
+		}
+	})
+</script>
+						

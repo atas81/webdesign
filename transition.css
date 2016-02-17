@@ -1,0 +1,61 @@
+div {
+  transition: background-color 0.5s ease;
+  background-color: red;
+}
+div:hover {
+  background-color: green;
+  width: 30%;
+  height: 30%;
+  transform: rotate(30deg);
+  margin-left: 45%;
+  border-radius: 75%;
+  color: white;
+}
+
+.box {
+  width: 150px;
+  height: 150px;
+  background: red;
+  margin-top: 20px;
+  margin-left: auto;
+  margin-right: auto;
+  -webkit-transition: background-color 2s ease-out;
+  -moz-transition: background-color 2s ease-out;
+  -o-transition: background-color 2s ease-out;
+  transition: background-color 2s ease-out;
+}
+
+.box:hover {
+  background-color: green;
+  cursor: pointer;
+}
+
+@keyframes test {
+	0%, 100%   {
+		width: 25%;
+		height: 25%;
+		background-color: red;
+	}
+	25%, 75% {
+		margin-left: 75%;
+		border-radius: 25%;
+		transform: rotate(0deg);
+		background-color: blue;
+	}
+	50%{
+		width: 30%;
+		height: 30%;
+		transform: rotate(30deg);
+		color: white;
+	}
+}
+
+#css-animation-example:hover div{
+	animation-name: test;
+	animation-duration: 4s;
+	animation-iteration-count: infinite;
+	animation-direction: alternate;
+	animation-timing-function: ease-out;
+	animation-fill-mode: forwards;
+	animation-delay: 0s;
+}

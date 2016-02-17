@@ -1,0 +1,52 @@
+p:first-child {
+	color: orange;
+	font-size: 20px;
+}
+
+body {
+	background: transparent url('images/landschaft.jpg') no-repeat center center;
+	background-size: cover;
+	color: white;
+}
+
+h1 {
+	color: red;
+}
+
+#click-mich{
+	position: relative;
+	left: 100px; 
+	top: 100px;
+	width: 100px;
+	height: 100px;
+	background-color: red;
+	font-size: 50px;
+}
+
+#e2{
+	position: relative;
+	left: 200px; 
+	top: 100px;
+	width: 200px;
+	height: 200px;
+	background-color: blue;
+}
+
+#e3{
+	position: relative;
+	left: 400px; 
+	top: 100px;
+	width: 300px;
+	height: 300px;	
+	background-color: green;
+}
+
+<style>
+
+	/* Devices mit bestimmten Bildschirmgroessen */
+	@media (min-width: 800px) and (max-width: 1024px){
+		p{
+			color: black;
+		}
+	}
+</style>
